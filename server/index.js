@@ -13,7 +13,7 @@ app.use("/admin", adminRouter);
 app.use("/user", userRouter);
 
 //connect to MongoDB
-mongoose.connect('mongodb+srv://pritesh:LpS1mXXMPoBlCLYw@cluster0.4tf0p6z.mongodb.net/courses', { useNewUrlParser: true, useUnifiedTopology: true, dbName: "courses" });
+mongoose.connect('mongodb://localhost:27017/courses', { useNewUrlParser: true, useUnifiedTopology: true, dbName: "courses" });
 
 
 app.listen(3000, () => {
